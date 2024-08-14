@@ -46,7 +46,7 @@ article {
     background-color: aliceblue;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:500px) {
     .container {
         flex-direction: column;
     }
