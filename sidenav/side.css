@@ -1,13 +1,15 @@
 * {
     box-sizing: border-box;
-    }
-    body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    }
-    /* Style the side navigation */
-    .sidenav {
-    height: 520%;
+}
+
+.sidenav {
+    height: 100%;
     width: 200px;
     position: fixed;
     z-index: 1;
@@ -15,24 +17,47 @@
     left: 0;
     background-color: blue;
     overflow-x: hidden;
-    }
-    /* Side navigation links */
-    .sidenav a {
+}
+
+.sidenav a {
     color: white;
     padding: 16px;
     text-decoration: none;
     display: block;
-    }
-    /* Change color on hover */
-    .sidenav a:hover {
+}
+
+.sidenav a:hover {
     background-color: yellow;
     color: black;
-    }
-    /* Style the content */
-    .content {
+}
+
+.content {
     margin-left: 200px;
     padding-left: 20px;
+}
+
+.footer {
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
     }
-    .footer {
-        background-color: orange; padding: 10px;
+
+    .sidenav a {
+        float: left;
+        padding: 14px;
+        text-align: left;
+        width: 33.33%; 
     }
+
+    .content {
+        margin-left: 0;
+        padding: 10px;
+    }
+}
